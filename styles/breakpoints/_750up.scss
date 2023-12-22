@@ -1,0 +1,195 @@
+.mobile-nav {
+  &__list {
+    & ul {
+      top: 8%;
+      left: 0%;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    & li {
+      text-align: center;
+      & img {
+        width: 25%;
+      }
+    }
+    & p {
+      margin-top: 3%;
+    }
+  }
+}
+
+
+.footer {
+  margin-top: 8%;
+  &__nav {
+    float: none;
+    width: 100%;
+    & ul {
+      text-align: center;
+    }
+    
+    & li {
+      display: inline-block;
+      white-space: normal;
+      padding-left: 0;
+      padding-right: 0;
+      &:not(:first-child)::before {
+        content: "|";
+        margin-right: 0.3em;
+        margin-left: 0.3em;
+      }
+    } 
+  }
+
+  &__copy {
+    padding-top: 5%;
+  }
+}
+
+
+
+//ここからはsection//
+
+.section-text {
+  margin-bottom: 5%;
+}
+
+.shop-news {
+
+  &__inner {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    display: inline-block;
+  }
+}
+
+.news-hd {
+  width: 40%;
+  float: left;
+  display: block;
+  padding-right: 1%;
+  padding-bottom: 0%;
+}
+
+.news {
+  width: 60%;
+  float: right;
+  padding-left: 1%;
+  padding-bottom: 3%;
+}
+
+//----------------------//
+
+.concept {  
+  &__title2 {
+    font-size: 110%;
+  }
+
+  & br {
+    display: block;
+  }
+}
+
+//-----------------------//
+
+.menu-img {
+  flex-wrap:inherit;
+}
+
+.menu-box {
+  width: 23%;
+  margin-left: 3%;
+
+  &__img {
+    height: 170px;
+  }
+
+  &__img-whisky {
+    height: 170px;
+    & img {
+      object-position: 50% 32%;
+    }
+  }
+
+  &__text {
+    font-size: 75%;
+    line-height: 1.8em;
+  }
+}
+
+.menu-button {
+  padding: 8px 60px 8px 30px;
+}
+
+//----------------------//
+
+.poker-header {
+  &__text {
+    margin-bottom: -3%;
+  }
+}
+
+.p-box1 {
+  &__img {
+    height: 350px;
+    margin: -40px 0px 1rem;
+  }
+}
+
+
+.p-box2 {
+
+  &__img {
+    height: 350px;
+  }
+}
+
+
+
+//---------------------//
+
+.shop-info {
+  &__boxL {
+    display: block;
+    width: 50%;
+    float: left;
+    padding-right: 1%;
+  }
+
+  &__boxR {
+    width: 50%;
+    float: right;
+    display: block;
+    padding-left: 1%;
+  }
+}
+
+.shop-img {
+  height: 400px;
+}
+
+//----------------------//
+
+.atmosphere-list {
+  justify-content:flex-start;
+  margin-top: 5%;
+}
+
+.atmosphere-img {
+  width: 32%;
+  height: 180px;
+  margin-right: 1%;
+}
+
+//----------------------//
+
+
+
+// .reservation {
+//   height: 75vh;
+//   margin-top: 8%;
+//   padding: 20% 10%;
+// }

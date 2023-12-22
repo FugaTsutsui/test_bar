@@ -1,0 +1,33 @@
+@import 'modules/mixin';
+@import 'modules/hero-slider';
+@import 'modules/sections';
+@import 'modules/mobile-menu';
+@import 'modules/scroll';
+@import 'modules/animation';
+
+
+@import "breakpoints/base";
+// @media (min-width: 480px) {
+//   @import "breakpoints/480up";
+// }
+
+@media (min-width: 750px) {
+  @import "breakpoints/750up";
+}
+
+@media (min-width: 900px) {
+  @import "breakpoints/900up";
+}
+
+@media (min-width: 1200px) {
+  @import "breakpoints/1200up";
+}
+
+// @media (min-resolution: 192dpi)
+//       ,(-webkit-min-device-pixel-ratio: 2) {
+//   @import "breakpoints/2x";
+// }
+
+// @media print {
+//   @import "breakpoints/print";
+// }

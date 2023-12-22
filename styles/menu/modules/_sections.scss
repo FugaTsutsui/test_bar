@@ -1,0 +1,138 @@
+.section-layout {
+  position: relative;
+  padding-top: 5%;
+  width: 100%;
+}
+.section-inner {
+  margin: 0;
+  padding: 0 3%;
+}
+.section-header {
+  width: 100%;
+  display: block;
+  margin-bottom: 2%;
+  text-align: center;
+  padding-top: 70px;
+}
+.section-title {
+  font-size: 36px;
+  margin-bottom: 0;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 0 #666,2px 2px 0 #666,3px 3px 0 #666; 
+  
+}
+.section-text {
+  font-size: 80%;
+  margin-bottom: 10%;
+}
+
+
+.menu {
+  @extend .section-layout;
+
+  &__inner {
+    @extend .section-inner;
+  }
+}
+
+.menu-header {
+  @extend .section-header;
+
+  &__title {
+    @extend .section-title;
+  }
+  &__text {
+    @extend .section-text;
+  }
+}
+
+.menu-box {
+  margin-bottom: 5%;
+  width: 100%;
+
+  &__img {
+    width: 100%;
+    height: 300px;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 40%;
+    }
+  }
+
+  &__title {
+    padding-bottom:5px;
+    
+    & dt {
+      font-size: 24px;
+      color: #a39d7d;
+    }
+    & dd {
+      padding: 10px 0 0 2px;
+      border-top: solid 1px #393321;
+      font-size: 13px;
+      line-height: 1.54;
+    }
+  }
+}
+
+.poker {
+  margin-top: 3%;
+  &__title {
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #a39d7d;
+    font-weight: 1000;
+  }
+}
+
+
+
+.p-box1 {
+  width: 100%;
+
+  &__title {
+    position: relative;
+    font-size: 2.25rem;
+    color:#a8915f;
+    border-top: solid 1px #393321;
+    margin-bottom: 3%;
+    text-shadow: 1px 1px 0 #666,2px 2px 0 #666; 
+  }
+}
+
+
+.p-box1-text {
+  display: flex;
+  margin-top: -24px;
+  color: #e0e0e0;
+  
+
+  &__left {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 160px;
+    padding: 1em;
+    border: 1px solid #a8915f;
+  }
+  &__right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #a8915f;
+    font-size: 80%;
+    max-width: 850px;
+  }
+}
+
+.drink-text {
+  font-size: 70%;
+}
+
+.poker-text {
+  font-size: 70%;
+}

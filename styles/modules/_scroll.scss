@@ -1,0 +1,104 @@
+.inview{
+  opacity: 1  !important;
+  visibility: visible  !important;
+  z-index: 999;
+}
+
+.page-down {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: -3px;
+  bottom: 30px;
+  transition: opacity 0.5s, visibility 0.5s;
+  @include  animation(
+    $name: kf-top-anime,
+    $iteration-count: infinite,
+    $duration: 1.2s,
+    $timing-function: ease-out,
+    );
+
+  & a {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-size: 80%;
+    display: block;
+    transform: rotate(90deg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 50px;
+      top: 0;
+      right: 6px;
+      background-color: #a1a1a1;
+     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 20px;
+      top: -4px;
+      right: 5px;
+      background-color: #a1a1a1;
+      transform: rotate(205deg);
+    }
+  }
+}
+
+
+.page-top {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: -10px;
+  bottom: 30px;
+  transition: opacity 0.5s, visibility 0.5s;
+  @include animation(
+        $name: kf-top-anime,
+        $iteration-count: infinite,
+        $duration: 1.2s,
+        $timing-function: ease-out,
+        );
+  
+  a {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-size: 80%;
+    display: block;
+    transform: rotate(90deg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 50px;
+      top: 0;
+      right: 20px;
+      background-color: #a1a1a1;
+     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 20px;
+      top: -4px;
+      right: 52px;
+      background-color: #a1a1a1;
+      transform: rotate(-25deg);
+    }
+  }
+}
+
+@keyframes kf-top-anime {
+  0%, 
+  100% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: none;
+  }
+}

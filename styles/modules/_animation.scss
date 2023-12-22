@@ -1,0 +1,15 @@
+.animate-basic {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.text-animation {
+  @extend .animate-basic;
+}
+
+.fade-up {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s;
+  transition-timing-function: ease-in-out;
+}

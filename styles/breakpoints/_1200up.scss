@@ -1,0 +1,39 @@
+.mobile-menu-btn {
+  display: none;
+}
+
+.hd1200 {
+  display: block;
+}
+
+.header {
+  &__sns {
+    & img {
+      right: 10px;
+    }
+  }
+}
+
+.hd-nav {
+  &__list {
+    & a {
+      margin: 13px 30px 0px 0px;
+    }
+  }
+}
+
+//---------------------//
+.section-inner {
+  margin: 0;
+  padding: 0 15%;
+}
+
+//-----------------------//
+
+.shop-img {
+  height: 400px;
+
+  & img {
+    padding: 0 15%;
+  }
+}

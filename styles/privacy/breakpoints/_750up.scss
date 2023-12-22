@@ -1,0 +1,57 @@
+.mobile-nav {
+  &__list {
+    & ul {
+      top: 8%;
+      left: 0%;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    & li {
+      text-align: center;
+      & img {
+        width: 25%;
+      }
+    }
+    & p {
+      margin-top: 3%;
+    }
+  }
+}
+
+.footer {
+  margin-top: 8%;
+  &__nav {
+    float: none;
+    width: 100%;
+    & ul {
+      text-align: center;
+    }
+    
+    & li {
+      display: inline-block;
+      white-space: normal;
+      padding-left: 0;
+      padding-right: 0;
+      &:not(:first-child)::before {
+        content: "|";
+        margin-right: 0.3em;
+        margin-left: 0.3em;
+      }
+    } 
+  }
+
+  &__copy {
+    padding-top: 5%;
+  }
+}
+
+//-----------------------------//
+
+.privacy-header {
+  padding-top: 55px;
+
+  &__text {
+    margin-bottom: 3%;
+  }
+}
